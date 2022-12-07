@@ -1,0 +1,17 @@
+// console.log(document.querySelector(".message").textContent);
+// console.log(document.querySelector(".number").textContent);
+// console.log(document.querySelector(".score").textContent);
+
+// // Manipulate the dom
+// document.querySelector(".message").textContent = "🎉 Correct Number!";
+// document.querySelector(".number").textContent = 20;
+// document.querySelector(".score").textContent = 20;
+
+// console.log(
+//   (document.querySelector(".message").textContent = "🎉 Correct Number!")
+// );
+// console.log((document.querySelector(".number").textContent = 20));
+// console.log((document.querySelector(".score").textContent = 20));
+// console.log(document.querySelector(".guess").textContent);
+
+// document.querySelector(".guess").value = 23;
