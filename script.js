@@ -6,22 +6,13 @@ let attempt = 5;
 let score = (document.querySelector(".score").textContent = 0);
 let highscore = (document.querySelector(".highscore").textContent = 10);
 
+const emoji = "🧡";
 const heart = () => {
-  if (attempt == 4) {
-    return "🧡🧡🧡🧡";
+  let output = "";
+  for (let i = 0; i < attempt; i++) {
+    output += emoji;
   }
-  if (attempt == 3) {
-    return "🧡🧡🧡";
-  }
-  if (attempt == 2) {
-    return "🧡🧡";
-  }
-  if (attempt == 1) {
-    return "🧡";
-  }
-  //   for (let i = 0; i < attempt; i++) {
-  //     return `icon ${i}`;
-  //   }
+  return output;
 };
 
 const CheckHighScore = () => {
@@ -88,6 +79,7 @@ document.querySelector(".check").addEventListener("click", function () {
     CheckHighScore();
   } else if (guess !== secretNumber) {
     attempt--;
+    heart;
     displayMessage(
       guess > secretNumber
         ? `"📈 Too high!", You have ${heart()} lives remaining`
